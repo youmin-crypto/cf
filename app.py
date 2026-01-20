@@ -39,7 +39,7 @@ if st.button("Solve & Get Cookie"):
                 
                 with st.spinner("Solving Cloudflare..."):
                     # Timeout ကို 60s ထားပါ (Cloud server တွေက နှေးတတ်လို့ပါ)
-                    page.goto(target_url, wait_until="networkidle", timeout=120000)
+                    page.goto(target_url, wait_until="networkidle", timeout=240000)
                     page.wait_for_timeout(10000) 
                     
                     cookies = context.cookies()
