@@ -50,7 +50,7 @@ if st.button("Solve & Get Cookie"):
                 page.goto(target_url, wait_until="domcontentloaded", timeout=60000)
                 
                 # Cloudflare challenge ဖြေရှင်းဖို့ အချိန်အလုံအလောက် ပေးမယ်
-                page.wait_for_timeout(20000) 
+                page.wait_for_timeout(60000) 
                 
                 # Screenshot ရိုက်ကြည့်မယ် (ဘာဖြစ်နေလဲ သိရအောင်)
                 st.image(page.screenshot(), caption="Current Page State")
